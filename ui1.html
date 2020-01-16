@@ -1,0 +1,40 @@
+<html>
+<head>
+	<title>Musical KeyBoard</title>
+<link rel="stylesheet" href="ui-css1.css" type="text/css">
+<script src="ui-js11.js"></script>
+</head>
+	<body id="bd" onload="myfun()">
+		<audio id="aa"><source src="boom.wav">This is for 'a'</audio>
+		<audio id="ss"><source src="clap.wav">This is for 's'</audio>
+		<audio id="dd"><source src="hihat.wav">This is for 'd'</audio>
+		<audio id="ff"><source src="kick.wav">This is for 'f'</audio>
+		<audio id="gg"><source src="openhat.wav">This is for 'g'</audio>
+		<audio id="hh"><source src="ride.wav">This is for 'h'</audio>
+		<audio id="jj"><source src="snare.wav">This is for 'j'</audio>
+		<audio id="kk"><source src="tink.wav">This is for 'k'</audio>
+		<audio id="ll"><source src="tom.wav">This is for 'l'</audio>
+		<div id="btnlist">
+			<button id="rec" onclick="StartRecord()" style="width:300px">Start Recording</button>
+			<button id="strec" onclick="StopRec()" style="visibility:hidden;width:300px;">Stop Recording</button>
+			<button id="play" onclick="StartPlaying(1)" style="visibility:hidden;width:300px;">Play</button>
+			<button id="pause" onclick="Pause()" style="visibility:hidden;width:300px;">Pause</button>
+			<button id="stop" onclick="Stop()" style="visibility:hidden;width:300px;">Stop</button>
+			<button id="resume" onclick="Resume()" style="visibility:hidden;width:300px;">Resume</button>
+		</div>
+		<div id="keyslist">
+			<font style="color:white">
+				<div class="musickeys" id="a" onmouseover="chooseele('a')">A</div>
+				<div class="musickeys" id="s" onmouseover="chooseele('s')">S</div>
+				<div class="musickeys" id="d" onmouseover="chooseele('d')">D</div>
+				<div class="musickeys" id="f" onmouseover="chooseele('f')">F</div>
+				<div class="musickeys" id="g" onmouseover="chooseele('g')">G</div>
+				<div class="musickeys" id="h" onmouseover="chooseele('h')">H</div>
+				<div class="musickeys" id="j" onmouseover="chooseele('j')">J</div>
+				<div class="musickeys" id="k" onmouseover="chooseele('k')">K</div>
+				<div class="musickeys" id="l" onmouseover="chooseele('l')">L</div>
+			</font>
+		</div>
+		<font style="color:white"><p id="sp"></p></font>
+	</body>
+</html>
